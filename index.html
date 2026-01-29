@@ -1,64 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>FCS International Project</title>
+  <meta name="description" content="A multinational collaboration advancing understanding of Familial Chylomicronemia Syndrome through shared data, harmonised methods, and global partnership.">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- HEADER -->
 <header>
   <div class="container">
-    <h1>FCS International Project</h1>
-    <nav>
+    <div class="brand">
+      <div class="logo">FCS</div>
+      <div>
+        <h1>FCS International Project</h1>
+        <p class="subtitle">A colourful, professional academic site for an ultrarare collaboration.</p>
+      </div>
+    </div>
+    <nav class="nav">
       <a href="index.html">Home</a>
       <a href="about.html">What is FCS?</a>
-      <a href="symptoms.html">Symptoms & Diagnosis</a>
+      <a href="symptoms.html">Symptoms &amp; Diagnosis</a>
       <a href="collaboration.html">Why Collaboration?</a>
       <a href="countries.html">Countries</a>
+      <a href="cohort.html">Cohort</a>
       <a href="downloads.html">Downloads</a>
       <a href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
-<!-- MAIN -->
-<section>
-  <div class="container">
-    <h2>Welcome</h2>
+<main>
+  <!-- HERO with animated infographic -->
+  <section class="hero">
+    <div class="container" style="display:grid;grid-template-columns:1.25fr .9fr; gap:26px; align-items:center;">
+      <div>
+        <h2>Global collaboration for an ultrarare condition</h2>
+        <p>
+          The FCS International Project unites countries to build a harmonised dataset and shared
+          research outputs, strengthening evidence for Familial Chylomicronemia Syndrome (FCS).
+        </p>
+        <div class="button-row">
+          <a class="button" href="about.html">Learn about FCS</a>
+          <a class="button ghost" href="contact.html">Collaborate / Contact</a>
+        </div>
+      </div>
 
-    <div class="card">
-      <p>
-        The FCS International Project is a multinational collaboration dedicated to expanding
-        scientific understanding of Familial Chylomicronemia Syndrome (FCS) through shared data,
-        international participation, and evidence‑based research.
+      <!-- Animated SVG infographic -->
+      <div>
+        <svg class="hero-graphic" viewBox="0 0 220 220" role="img" aria-label="Animated infographic">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%"  stop-color="#6aa3ff"/>
+              <stop offset="100%" stop-color="#68f0c5"/>
+            </linearGradient>
+          </defs>
+
+          <!-- outer orbit -->
+          <circle cx="110" cy="110" r="90" fill="none" stroke="url(#g1)" stroke-width="3" class="orbit"/>
+          <!-- mid float ring -->
+          <circle cx="110" cy="110" r="64" fill="none" stroke="#6aa3ff" stroke-opacity=".75" stroke-width="3" class="float"/>
+          <!-- inner pulse -->
+          <circle cx="110" cy="110" r="32" fill="#6aa3ff" opacity=".9" class="pulse"/>
+          <text x="110" y="115" text-anchor="middle" fill="#06101f" font-size="12" font-weight="800">FCS</text>
+
+          <!-- small sparkles -->
+          <circle cx="30"  cy="40"  r="2.1" fill="#68f0c5" class="spark"/>
+          <circle cx="198" cy="66"  r="1.8" fill="#6aa3ff" class="spark" style="animation-delay:.4s"/>
+          <circle cx="40"  cy="180" r="1.9" fill="#6aa3ff" class="spark" style="animation-delay:.8s"/>
+          <circle cx="178" cy="170" r="2.2" fill="#68f0c5" class="spark" style="animation-delay:1.2s"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview cards -->
+  <section class="section">
+    <div class="container">
+      <div class="cards">
+        <div class="card">
+          <h3>What we do</h3>
+          <p>Harmonise international data and enable shared analyses across participating sites.</p>
+        </div>
+        <div class="card">
+          <h3>Why it matters</h3>
+          <p>Ultrarare diseases require pooled cohorts to build meaningful evidence and trial readiness.</p>
+        </div>
+        <div class="card">
+          <h3>Get involved</h3>
+          <p>Researchers, clinicians, and collaborators are welcome—use the Contact page to reach us.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Alt section -->
+  <section class="section alt">
+    <div class="container narrow">
+      <h2>Project aim</h2>
+      <p style="color:var(--muted);">
+        To unite partners worldwide to develop a shared evidence base for FCS while improving awareness,
+        facilitating diagnoses, and supporting future research activities.
       </p>
     </div>
-
-    <h2>Project Overview</h2>
-
-    <div class="card">
-      <p>
-        This project connects data and researchers across countries to strengthen knowledge of FCS,
-        improve evidence for clinical understanding, and support future global collaboration.
-      </p>
-    </div>
-
-    <h2>Next Steps</h2>
-    <div class="card">
-      <p>
-        Additional pages will appear soon, including detailed explanations of FCS, symptoms,
-        diagnosis, international collaboration, cohort information, and downloadable materials.
-      </p>
-    </div>
-  </div>
-</section>
+  </section>
+</main>
 
 <footer>
-  <p>© 2026 FCS International Project</p>
+  <div class="container">
+    © <span id="year"></span> FCS International Project • Educational content only; not medical advice.
+  </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
