@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Why Collaboration – FCS International Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="brand">
+      <div class="logo">FCS</div>
+      <div><h1>FCS International Project</h1><p class="subtitle">Why collaboration matters for ultrarare diseases</p></div>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a><a href="about.html">What is FCS?</a><a href="symptoms.html">Symptoms &amp; Diagnosis</a><a href="collaboration.html">Why Collaboration?</a><a href="countries.html">Countries</a><a href="cohort.html">Cohort</a><a href="downloads.html">Downloads</a><a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="cards">
+        <div class="card">
+          <h3>Registries & natural history</h3>
+          <p>Pooling data across borders builds meaningful sample sizes and natural‑history evidence.</p>
+        </div>
+        <div class="card">
+          <h3>Trial readiness</h3>
+          <p>Collaborative networks enable recruitment, standardised outcomes, and multi‑centre studies.</p>
+        </div>
+        <div class="card">
+          <h3>Shared standards</h3>
+          <p>Harmonised data elements improve comparability and accelerate discovery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container narrow">
+      <h2>Infographic</h2>
+      <p style="color:var(--muted)">Add your PNG/SVG infographic here (drag into the repo and link below).</p>
+      <!-- Example placeholder image -->
+      <!-- <img src="assets/images/Infographic_Why_Global_Collaboration.png" alt="Why collaborate infographic" style="max-width:100%;border-radius:14px;border:1px solid var(--border);box-shadow:var(--shadow)"> -->
+    </div>
+  </section>
+</main>
+
+<footer><div class="container">© <span id="year"></span> FCS International Project</div></footer>
+<script src="script.js"></script>
+</body>
+</html>
